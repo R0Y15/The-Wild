@@ -42,15 +42,6 @@ h2 {
   animation: animate calc(2s * var(--i)) linear infinite;
 }
 
-#container {
-  height: 2000px;
-}
-
-#container DIV {
-  margin: 50px;
-  padding: 50px;
-}
-
 .hideme {
   opacity: 0;
 }
@@ -99,4 +90,112 @@ section h1 {
   h1 {
     font-size: 1.2rem;
   }
+}
+
+/* Scrolling Effect */
+.parallax-img1,
+.parallax-img2,
+.parallax-img3,
+.parallax-img4,
+.parallax-img5 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+  fixed = parallax
+  scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+/* import images and position them */
+.parallax-img1 {
+  background-image: url('../img/img1.jpeg');
+  min-height: 400px;
+}
+
+.parallax-img2 {
+  background-image: url('../img/img2.jpeg');
+  min-height: 400px;
+}
+
+.parallax-img3 {
+  background-image: url('../img/img3.jpeg');
+  min-height: 400px;
+}
+
+.parallax-img4 {
+  background-image: url('../img/img4.jpeg');
+  min-height: 400px;
+}
+
+.parallax-img5 {
+  background-image: url('../img/img5.jpeg');
+  min-height: 400px;
+}
+
+/* Section Styling */
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+
+/* image text and content styling */
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border img {
+  position: relative;
+  top: -195px;
+  left: -20px;
+  max-height: 390px;
+  opacity: 0.90;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+/* Mobile friendly */
+@media(max-width:960px){
+  .fullscreen-video-wrap video{
+    min-width: 116%;
+    min-height: 100%;
+    margin-bottom: -500px;
+    margin-left: -520px;
+  }
+}
+
+@media (max-width:720px) {
+  .fullscreen-video-wrap video{
+    min-width: 116%;
+    min-height: 100%;
+    margin-bottom: -500px;
+    margin-left: -640px;
+  }
+}
+
+@media(max-width:568px){
+
+  .fullscreen-video-wrap video{
+    margin-left: -800px;
+  }
+
+  .parallax-img1, .parallax-img2, .parallax-img3, .parallax-img4, .parallax-img5 {
+    background-attachment: scroll;
+  }
+
 }
