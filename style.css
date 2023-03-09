@@ -113,27 +113,27 @@ section h1 {
 
 /* import images and position them */
 .parallax-img1 {
-  background-image: url('../img/img1.jpeg');
+  background-image: url('./img/img1.jpeg');
   min-height: 400px;
 }
 
 .parallax-img2 {
-  background-image: url('../img/img2.jpeg');
+  background-image: url('./img/img2.jpeg');
   min-height: 400px;
 }
 
 .parallax-img3 {
-  background-image: url('../img/img3.jpeg');
+  background-image: url('./img/img3.jpeg');
   min-height: 400px;
 }
 
 .parallax-img4 {
-  background-image: url('../img/img4.jpeg');
+  background-image: url('./img/img4.jpeg');
   min-height: 400px;
 }
 
 .parallax-img5 {
-  background-image: url('../img/img5.jpeg');
+  background-image: url('./img/img5.jpeg');
   min-height: 400px;
 }
 
