@@ -1,13 +1,10 @@
-let text = document.querySelector('.banner h2');
 
-window.addEventListener('scroll', () => {
-  let value = window.scrollY;
-  text.style.marginBottom = value * 2 + 'px';
-})
+// tootltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // navbar
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   var navbar = document.getElementById("navbar");
   var footer = document.getElementById("footer");
@@ -24,8 +21,6 @@ function scrollFunction() {
 }
 
 
-
-// scroll fadein effect
 $(document).ready(function () {
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
@@ -33,10 +28,14 @@ $(document).ready(function () {
     $('.hideme').each(function (i) {
       var bottom_of_object = $(this).position().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
-      /* If the object is completely visible in the window, fade it it */
-      if (bottom_of_window > bottom_of_object) {
-        $(this).animate({ 'opacity': '1' }, 1500);
+      var top_of_object = $(this).position().top;
+      var top_of_window = $(window).scrollTop();
+
+      /* If the top of the object is visible in the window, fade it in */
+      if (top_of_window + ($(window).height() / 2) > top_of_object) {
+        $(this).animate({ 'opacity': '1' }, 1500 * (i + 1));
       }
     });
   });
 });
+
