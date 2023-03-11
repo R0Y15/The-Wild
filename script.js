@@ -5,6 +5,25 @@ window.addEventListener('scroll', () => {
   text.style.marginBottom = value * 2 + 'px';
 })
 
+// navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var navbar = document.getElementById("navbar");
+  var footer = document.getElementById("footer");
+
+  if (document.body.scrollTop > (window.innerHeight / 2) || document.documentElement.scrollTop > (window.innerHeight / 2)) {
+    navbar.classList.add("active");
+  } else {
+    navbar.classList.remove("active");
+  }
+
+  if (footer.offsetTop <= (window.innerHeight + window.pageYOffset)) {
+    navbar.classList.remove("active");
+  }
+}
+
+
 
 // scroll fadein effect
 $(document).ready(function () {
