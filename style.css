@@ -162,6 +162,7 @@ section h1 {
 /* body */
 h1 {
   font-family: 'Tilt Warp', cursive;
+  letter-spacing: 2;
 }
 
 h5 {
