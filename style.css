@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 /* navbar */
 
@@ -33,20 +34,21 @@
   transition: all 0.3s ease;
 }
 
-#navbar a:hover {
-  /* background-color: #fff; */
-  color: #73ff00;
-  /* color: #333; */
+#navbar a:active {
+  color: #0077ff;
 }
 
 #navbar.active {
-  /* display: none;
-  transition: right 0.3s ease; */
   left: 0;
 }
 
-/* hearo */
-.hero{
+#navbar a:hover {
+  color: #73ff00;
+}
+
+
+/* hero */
+.hero {
   margin: 0;
   padding: 0;
   font-family: 'Climate Crisis', cursive;
@@ -90,6 +92,11 @@ h2 {
 
 .hideme {
   opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hideme.appear {
+  opacity: 1;
 }
 
 @keyframes animate {
@@ -147,9 +154,18 @@ section h1 {
   margin: 0 auto;
 }
 
+.carousel img {
+  max-width: 100%;
+  text-align: center;
+}
+
 /* body */
-h1{
+h1 {
   font-family: 'Tilt Warp', cursive;
+}
+
+h5 {
+  letter-spacing: 2;
 }
 
 /* Scrolling Effect */
@@ -199,12 +215,12 @@ h1{
   font-size: 20px;
 }
 
-.container-text{
-  margin-top: 10px;
+.container-text {
+  margin-top: 35px;
 }
 
 
-/* image text and content styling */
+/* image, text and content styling */
 .ptext {
   position: absolute;
   width: 100%;
@@ -225,6 +241,10 @@ h1{
 
 .ptext .border.trans {
   background-color: transparent;
+}
+
+.light-text {
+  opacity: 75%;
 }
 
 /* Mobile friendly */
@@ -262,14 +282,30 @@ h1{
 
 }
 
-.card{
+/* card */
+.card {
   top: 100px;
-  /* make the cards smaller in size */
   width: 300px;
-  /* make the cards smaller in size */
   height: 500px;
-  /* make the cards smaller in size */
   margin: 10px;
-  /* make the cards smaller in size */
   padding: 5px;
+}
+
+.card-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-body {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card-text {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 2;
 }

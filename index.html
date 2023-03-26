@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <!-- add favicon -->
     <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- navbar -->
     <div id="navbar">
@@ -24,9 +25,9 @@
             <li><a href="#home" data-bs-toggle="tooltip" data-bs-title="Home"><i class="bi bi-house"></i></a></li>
             <li><a href="#services" data-bs-toggle="tooltip" data-bs-title="Services"><i
                         class="bi bi-gear-wide-connected"></i></a></li>
-            <li><a href="#portfolio" data-bs-toggle="tooltip" data-bs-title="Portfolio"><i
-                        class="bi bi-briefcase"></i></a></li>
-            <li><a href="#contact" data-bs-toggle="tooltip" data-bs-title="Contact Us"><i
+            <li><a href="#photography" data-bs-toggle="tooltip" data-bs-title="photography"><i
+                        class="bi bi-camera2"></i></a></li>
+            <li><a href="#profiles" data-bs-toggle="tooltip" data-bs-title="profiles Us"><i
                         class="bi bi-person-vcard"></i></a></li>
             <li><a href="#about" data-bs-toggle="tooltip" data-bs-title="About"><i class="bi bi-info-circle"></i></a>
             </li>
@@ -35,7 +36,7 @@
 
 
     <!-- Hero section -->
-    <div class="hero">
+    <div id="home" class="hero">
         <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
         <div class="banner">
             <h2>The Wild</h2>
@@ -56,299 +57,314 @@
     </div>
 
     <!-- body section -->
-    <div id="container">
 
-        <div>
-            <!-- section 1 -->
-            <section class="section hideme">
-                <h1>section-1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
-                    consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
-                    totam
-                    consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
-                    illum
-                    architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
-                    illo
-                    nam
-                    mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
-                    reprehenderit
-                    aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
-                    officiis<br><br>
-                    provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
-                    possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
-                    laudantium
-                    expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
-                    deleniti
-                    ex.
-                    Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
-                    eius
-                    itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
-                    autem
-                    ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
-                    accusamus
-                    ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
-                    molestiae
-                    nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
-                    unde
-                    accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
-                    consequuntur
-                    atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
-                    molestiae
-                    aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
-                    Soluta
-                    maxime
-                    deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
-                    rem
-                    eos
-                    optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
-                    corporis
-                    in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
-                    aut
-                    ad
-                    dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
-                    libero
-                    vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
-            </section>
+    <!-- section 1 -->
+    <section id="services" class="section hideme">
+        <h1>section-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
+            consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
+            totam
+            consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
+            illum
+            architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
+            illo
+            nam
+            mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
+            reprehenderit
+            aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
+            officiis<br><br>
+            provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
+            possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
+            laudantium
+            expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
+            deleniti
+            ex.
+            Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
+            eius
+            itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
+            autem
+            ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
+            accusamus
+            ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
+            molestiae
+            nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
+            unde
+            accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
+            consequuntur
+            atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
+            molestiae
+            aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
+            Soluta
+            maxime
+            deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
+            rem
+            eos
+            optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
+            corporis
+            in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
+            aut
+            ad
+            dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
+            libero
+            vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
+    </section>
 
-            <div class="parallax-img1">
-                <div class="ptext">
+    <!-- section-1 paralllax -->
+    <div class="parallax-img1">
+        <div class="ptext">
+        </div>
+    </div>
+
+
+    <!-- Photography -->
+    <section id="photography" class="section hideme">
+        <h1>Photography</h1>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1545063914-a1a6ec821c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1516628368662-4220aaf9339d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1127&q=80"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1583587067350-2c49115673c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container text-center">
+            <p class="container-text">
+                See the breathtaking beauty of nature as it is captured by our skilled wildlife photographers.
+                This
+                collection of breathtaking wildlife photography captures the wonders of the natural world like
+                never
+                before, from the ferocious predators of the savannah to the elusive critters of the jungle. Each
+                image documents a distinct narrative and a split-second in time. Enjoy the eye-catching hues,
+                exquisite details, and spectacular vistas that make up the various habitats on our planet.
+                Whether
+                you're a fervent admirer of nature or are just looking for inspiration, this selection of
+                wildlife
+                photography will leave you speechless.
+            </p>
+            <p><b>Join us to get featured for your clicks</b>&nbsp; <a href="..."><i
+                        class="bi bi-arrow-right-circle"></i></a></p>
+        </div>
+    </section>
 
+    <!-- section-2 parallax (cards) -->
+    <section id="cards-section">
+        <div id="profiles" class="parallax-img2">
+            <div class="ptext">
 
-            <!-- section 2 -->
-            <section class="section hideme">
-                <h1>Photography</h1>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80"
-                                class="d-block w-100" alt="...">
+                <!-- card -->
+                <div class="container text-center hideme">
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card slide-up">
+                                <img src="/img/ava1.jpg" class="card-img-top" alt="not-found">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Matthew Glover</h5>
+                                    <div class="container card-text">
+                                        <p>Ex-Production Mill Manager at Wallmart</p>
+                                        <p>Heat treating equipment operator</p>
+                                        <p class="light-text">(DGS HomeSource)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="d-block w-100" alt="...">
+                        <div class="col">
+                            <div class="card slide-up">
+                                <img src="/img/ava2.jpg" class="card-img-top" alt="not-found">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Lori M. Knight</h5>
+                                    <div class="container card-text">
+                                        <p>Ex-Assistant Engineer at Willson & Co.</p>
+                                        <p>Forging machine setter and Store-Manager</p>
+                                        <p class="light-text">(Target Realty)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1545063914-a1a6ec821c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="d-block w-100" alt="...">
+                        <div class="col">
+                            <div class="card slide-up">
+                                <img src="/img/ava3.jpg" class="card-img-top" alt="not-found">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <h5 class="card-title">Dr. Marvin C. Jones</h5>
+                                        <div class="container card-text">
+                                            <p>Ex-Scientist at SpaceX</p>
+                                            <p>Combined food preparation and testing Scientist</p>
+                                            <p class="light-text">(AM/PM Camp)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1516628368662-4220aaf9339d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1127&q=80"
-                                class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1583587067350-2c49115673c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="d-block w-100" alt="...">
+                        <div class="col">
+                            <div class="card slide-up">
+                                <img src="/img/ava4.jpg" class="card-img-top" alt="not-found">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Fernando M. Bell</h5>
+                                    <div class="container card-text">
+                                        <p>Ex-Senior Developer at Tesla</p>
+                                        <p>Real-time captioner and machine operator</p>
+                                        <p class="light-text">(Alladin's Lamp)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-                <div class="container text-center">
-                    <p class="container-text">
-                        See the breathtaking beauty of nature as it is captured by our skilled wildlife photographers.
-                        This
-                        collection of breathtaking wildlife photography captures the wonders of the natural world like
-                        never
-                        before, from the ferocious predators of the savannah to the elusive critters of the jungle. Each
-                        image documents a distinct narrative and a split-second in time. Enjoy the eye-catching hues,
-                        exquisite details, and spectacular vistas that make up the various habitats on our planet.
-                        Whether
-                        you're a fervent admirer of nature or are just looking for inspiration, this selection of
-                        wildlife
-                        photography will leave you speechless.
-                    </p>
-                    <p><b>Join us to get featured for your clicks</b>&nbsp; <a href="..."><i
-                                class="bi bi-arrow-right-circle"></i></a></p>
-                </div>
-            </section>
-
-            <div class="parallax-img2">
-                <div class="ptext">
-
-                    <div class="container text-center">
-                        <div class="row row-cols-1 row-cols-md-4 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://www.marketingtool.online/en/face-generator/img/faces/avatar-1171f6ca85879e6144461209724a7e93.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p>This is a longer card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural
-                                            lead-in to additional content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
+    </section>
 
-        <!-- section 3 -->
-        <section class="section hideme">
-            <h1>section-3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
-                consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
-                totam
-                consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
-                illum
-                architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
-                illo
-                nam
-                mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
-                reprehenderit
-                aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
-                officiis<br><br>
-                provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
-                possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
-                laudantium
-                expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
-                deleniti
-                ex.
-                Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
-                eius
-                itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
-                autem
-                ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
-                accusamus
-                ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
-                molestiae
-                nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
-                unde
-                accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
-                consequuntur
-                atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
-                molestiae
-                aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
-                Soluta
-                maxime
-                deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
-                rem
-                eos
-                optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
-                corporis
-                in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
-                aut
-                ad
-                dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
-                libero
-                vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
-        </section>
 
-        <div class="parallax-img3">
-            <div class="ptext">
-            </div>
+    <!-- section 3 -->
+    <section class="section hideme">
+        <h1>section-3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
+            consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
+            totam
+            consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
+            illum
+            architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
+            illo
+            nam
+            mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
+            reprehenderit
+            aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
+            officiis<br><br>
+            provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
+            possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
+            laudantium
+            expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
+            deleniti
+            ex.
+            Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
+            eius
+            itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
+            autem
+            ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
+            accusamus
+            ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
+            molestiae
+            nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
+            unde
+            accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
+            consequuntur
+            atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
+            molestiae
+            aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
+            Soluta
+            maxime
+            deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
+            rem
+            eos
+            optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
+            corporis
+            in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
+            aut
+            ad
+            dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
+            libero
+            vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
+    </section>
+
+    <!-- section-3 parallax -->
+    <div class="parallax-img3">
+        <div class="ptext">
         </div>
-
-        <section class="section hideme">
-            <h1>section-4</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
-                consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
-                totam
-                consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
-                illum
-                architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
-                illo
-                nam
-                mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
-                reprehenderit
-                aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
-                officiis<br><br>
-                provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
-                possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
-                laudantium
-                expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
-                deleniti
-                ex.
-                Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
-                eius
-                itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
-                autem
-                ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
-                accusamus
-                ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
-                molestiae
-                nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
-                unde
-                accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
-                consequuntur
-                atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
-                molestiae
-                aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
-                Soluta
-                maxime
-                deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
-                rem
-                eos
-                optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
-                corporis
-                in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
-                aut
-                ad
-                dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
-                libero
-                vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
-        </section>
-
-        <div class="parallax-img4">
-            <div class="ptext">
-            </div>
-        </div>
-
     </div>
+
+
+    <!-- section 4 -->
+    <section id="about" class="section hideme">
+        <h1>section-4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex soluta adipisci voluptatum laborum cum
+            consequuntur explicabo nam aliquam quia in eius rerum cupiditate esse blanditiis accusantium vitae
+            totam
+            consectetur quisquam, corrupti harum quod. Omnis eos consectetur ex modi praesentium autem dicta
+            illum
+            architecto possimus veniam. Distinctio, ullam! Nemo, rerum libero! Id ea aliquid nulla? Doloremque
+            illo
+            nam
+            mollitia culpa dolore libero facilis error sapiente dolorem doloribus voluptatem corrupti
+            reprehenderit
+            aspernatur, ipsam optio! Exercitationem assumenda nihil quaerat magnam magni, sint architecto
+            officiis<br><br>
+            provident obcaecati nulla totam suscipit omnis eos veritatis dolores doloremque deserunt fugit saepe
+            possimus perspiciatis est esse? Culpa maxime ex necessitatibus! Blanditiis perferendis dolor,
+            laudantium
+            expedita optio sunt culpa, cumque iusto nulla exercitationem rerum placeat in doloribus quas
+            deleniti
+            ex.
+            Tenetur ratione consequuntur natus iusto voluptas doloremque quae tempora neque recusandae, facilis
+            eius
+            itaque adipisci repellendus at ducimus incidunt corporis dolore nam veritatis ab unde cumque. Illo
+            autem
+            ducimus alias, facere suscipit dolores doloribus quidem nulla placeat, excepturi esse voluptatem a
+            accusamus
+            ad dolore accusantium atque animi optio quam? Dolores, laboriosam suscipit velit obcaecati ab
+            molestiae
+            nesciunt ipsam? Voluptatum a architecto perspiciatis cupiditate. Suscipit soluta repudiandae quidem
+            unde
+            accusantium deserunt dignissimos maiores cum natus. Blanditiis error dolore quidem culpa itaque
+            consequuntur
+            atque, tempore eveniet nulla explicabo voluptatem sed officia laudantium consectetur quia neque
+            molestiae
+            aspernatur temporibus quaerat? <br><br>Voluptas modi commodi laboriosam eum ad eius ea libero vitae!
+            Soluta
+            maxime
+            deleniti ipsam laudantium hic quidem molestiae magnam voluptate, tempora autem earum ad reiciendis
+            rem
+            eos
+            optio quam ipsum consequatur dolorem unde commodi? Eius, ut temporibus nihil minus aperiam facilis
+            corporis
+            in nesciunt nemo magnam a veniam. Architecto qui recusandae dolorum cum sunt. Amet quos, id delectus
+            aut
+            ad
+            dolorum explicabo molestias corporis saepe iure aliquid, soluta, veniam pariatur voluptates totam
+            libero
+            vero? Eos eius accusamus impedit maiores culpa ex nobis?</p>
+    </section>
+
+    <!-- section-4 parallax -->
+    <div class="parallax-img4">
+        <div class="ptext">
+        </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted" id="footer">
@@ -464,10 +480,14 @@
         <!-- Copyright -->
     </footer>
 
+
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
