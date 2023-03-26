@@ -27,7 +27,7 @@
 
 #navbar a {
   display: block;
-  color: #000000;
+  color: #303030;
   font-size: 30px;
   text-decoration: none;
   padding: 10px;
@@ -177,6 +177,9 @@ h5 {
 .parallax-img5 {
   position: relative;
   opacity: 0.70;
+  /* filter: brightness(70%); */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,6 +188,7 @@ h5 {
 
 /* import images and position them */
 .parallax-img1 {
+  position: relative;
   background-image: url('./img/img1.jpeg');
   min-height: 400px;
 }
@@ -210,7 +214,6 @@ h5 {
 }
 
 /* Section Styling */
-
 .section {
   text-align: center;
   font-size: 20px;
@@ -223,10 +226,10 @@ h5 {
 
 /* image, text and content styling */
 .ptext {
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: #000000;
   font-size: 27px;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -309,4 +312,40 @@ h5 {
   text-align: center;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 2;
+}
+
+/* images */
+.img {
+  flex: 1;
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.img-container{
+  display: absolute;
+  position: relative;
+  width: 100%;
+}
+
+.below-text {
+  width: 353px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin-top: 2px;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .img {
+    width: calc(70% - 20px); /* adjust this as needed */
+    height: auto;
+    margin: 0 5px;
+    max-width: 200px;
+  }
 }
