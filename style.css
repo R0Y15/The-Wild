@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* navbar */
 #navbar {
   position: fixed;
@@ -88,12 +94,16 @@ h2 {
   animation: animate calc(2s * var(--i)) linear infinite;
 }
 
-.hideme {
+/* visibility */
+.reveal{
+  position: relative;
+  transform: translateX(150px);
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: all 0.5s ease;
 }
 
-.hideme.appear {
+.reveal.revealup{
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -152,11 +162,6 @@ section h1 {
   margin: 0 auto;
 }
 
-.carousel img {
-  max-width: 100%;
-  text-align: center;
-}
-
 /* body */
 h1 {
   font-family: 'Tilt Warp', cursive;
@@ -175,9 +180,9 @@ h5 {
 .parallax-img4,
 .parallax-img5 {
   opacity: 0.70;
-  filter: brightness(70%);
-  /* filter: blur(2px);
-  -webkit-filter: blur(2px); */
+  filter: brightness(50%);
+  filter: blur(3px);
+  /* -webkit-filter: blur(2px); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -211,9 +216,11 @@ h5 {
 }
 
 /* Section Styling */
-.section {
+section {
+  position: relative;
   text-align: center;
   font-size: 20px;
+  overflow: hidden;
 }
 
 .container-text {
@@ -326,7 +333,7 @@ h5 {
   border: #ffffff70;
   border-style: solid;
   border-radius: 10px;
-  width: 327px;
+  width: 320px;
   font-size: 25px;
   text-align: center;
   display: block;
