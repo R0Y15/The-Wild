@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 /* navbar */
-
 #navbar {
   position: fixed;
   top: 50%;
@@ -34,10 +33,9 @@
   transition: all 0.3s ease;
 }
 
-#navbar a:active {
-  color: #0077ff;
+#navbar .highlight{
+  color: #73ff0094;
 }
-
 #navbar.active {
   left: 0;
 }
@@ -163,6 +161,7 @@ section h1 {
 h1 {
   font-family: 'Tilt Warp', cursive;
   letter-spacing: 2;
+  font-size: 60px !important;
 }
 
 h5 {
@@ -175,9 +174,8 @@ h5 {
 .parallax-img3,
 .parallax-img4,
 .parallax-img5 {
-  position: relative;
   opacity: 0.70;
-  /* filter: brightness(70%); */
+  filter: brightness(70%);
   /* filter: blur(2px);
   -webkit-filter: blur(2px); */
   background-position: center;
@@ -188,9 +186,8 @@ h5 {
 
 /* import images and position them */
 .parallax-img1 {
-  position: relative;
   background-image: url('./img/img1.jpeg');
-  min-height: 400px;
+  min-height: 550px;
 }
 
 .parallax-img2 {
@@ -247,10 +244,6 @@ h5 {
   background-color: transparent;
 }
 
-.light-text {
-  opacity: 75%;
-}
-
 /* Mobile friendly */
 @media(max-width:960px) {
   .fullscreen-video-wrap video {
@@ -288,7 +281,7 @@ h5 {
 
 /* card */
 .card {
-  top: 100px;
+  top: 10px;
   width: 300px;
   height: 500px;
   margin: 10px;
@@ -306,6 +299,8 @@ h5 {
 }
 
 .card-text {
+  color: #000000;
+  font-weight: bold;
   margin-top: 15px;
   font-size: 16px;
   line-height: 1;
@@ -314,25 +309,25 @@ h5 {
   letter-spacing: 2;
 }
 
+.light-text {
+  opacity: 60%;
+}
+
 /* images */
 .img {
   flex: 1;
   width: 350px;
   height: 350px;
-  margin-top: 10px;
+  margin-top: 5px;
   transition: all 0.5s ease;
-  z-index: 1;
-}
-
-.img-container{
-  display: absolute;
-  position: relative;
-  width: 100%;
 }
 
 .below-text {
-  width: 353px;
-  font-size: 30px;
+  border: #ffffff70;
+  border-style: solid;
+  border-radius: 10px;
+  width: 327px;
+  font-size: 25px;
   text-align: center;
   display: block;
   margin-top: 2px;
@@ -340,10 +335,26 @@ h5 {
   font-family: 'Rubik', sans-serif;
 }
 
+.overlap {
+  width: 75%;
+  text-align: center !important;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.parallax-container {
+  position: relative;
+  z-index: 0;
+}
 
 @media screen and (max-width: 1000px) {
   .img {
-    width: calc(70% - 20px); /* adjust this as needed */
+    width: calc(70% - 20px);
+    /* adjust this as needed */
     height: auto;
     margin: 0 5px;
     max-width: 200px;

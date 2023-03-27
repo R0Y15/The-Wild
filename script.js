@@ -4,7 +4,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // navbar
-window.onscroll = function () {scrollFunction() };
+// Scroll function
 function scrollFunction() {
   var navbar = document.getElementById("navbar");
   var footer = document.getElementById("footer");
@@ -20,7 +20,27 @@ function scrollFunction() {
   }
 }
 
-//body
+// Highlight active tab function
+function highlightActiveTab() {
+  // Get the current page URL
+  var currentUrl = window.location.href;
+
+  // Find the links in the navbar
+  var navLinks = document.querySelectorAll('#navbar a');
+
+  // Loop through the links and check if their href matches the current URL
+  for (var i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].href === currentUrl) {
+      // Add the "active" class to the link if it matches the current URL
+      navLinks[i].classList.add('active');
+    } else {
+      // Remove the "active" class from the link if it doesn't match the current URL
+      navLinks[i].classList.remove('active');
+    }
+  }
+}
+
+// Scrollspy function
 $(document).ready(function () {
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
@@ -36,3 +56,9 @@ $(document).ready(function () {
     });
   });
 });
+
+// Attach scroll and highlightActiveTab functions to window.onscroll
+window.onscroll = function() {
+  scrollFunction();
+  highlightActiveTab();
+};
