@@ -20,19 +20,52 @@ function scrollFunction() {
 
 // scroll function
 function reveal() {
-  var reveals = document.querySelectorAll('.reveal');
+  var revealx = document.querySelectorAll('.revealX');
+  var revealx_rev = document.querySelectorAll('.revealX-rev');
+  var revealy = document.querySelectorAll('.revealY');
 
-  for (var i = 0; i < reveals.length; i++) {
+  // revealX
+  for (var i = 0; i < revealx.length; i++) {
 
     var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealtop = revealx[i].getBoundingClientRect().top;
     var revealpoint = 250;
 
     if (revealtop < windowheight - revealpoint) {
-      reveals[i].classList.add('revealup');
+      revealx[i].classList.add('revealX-active');
     }
     else {
-      reveals[i].classList.remove('revealup');
+      revealx[i].classList.remove('revealX-active');
+    }
+  }
+
+  // revealX-reverse
+  for (var i = 0; i < revealx_rev.length; i++) {
+
+    var windowheight = window.innerHeight;
+    var revealtop = revealx_rev[i].getBoundingClientRect().top;
+    var revealpoint = 250;
+
+    if (revealtop < windowheight - revealpoint) {
+      revealx_rev[i].classList.add('revealX-rev-active');
+    }
+    else {
+      revealx_rev[i].classList.remove('revealX-rev-active');
+    }
+  }
+
+  // revealY
+  for (var i = 0; i < revealy.length; i++) {
+
+    var windowheight = window.innerHeight;
+    var revealtop = revealy[i].getBoundingClientRect().top;
+    var revealpoint = 250;
+
+    if (revealtop < windowheight - revealpoint) {
+      revealy[i].classList.add('revealY-active');
+    }
+    else {
+      revealy[i].classList.remove('revealY-active');
     }
   }
 }

@@ -95,15 +95,39 @@ h2 {
 }
 
 /* visibility */
-.reveal{
+.revealX{
   position: relative;
   transform: translateX(150px);
   opacity: 0;
   transition: all 0.5s ease;
 }
 
-.reveal.revealup{
+.revealX-rev{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.revealY{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.revealX.revealX-active{
   transform: translateX(0);
+  opacity: 1;
+}
+
+.revealX-rev.revealX-rev-active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealY.revealY-active{
+  transform: translateY(0);
   opacity: 1;
 }
 
