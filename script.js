@@ -20,9 +20,25 @@ function scrollFunction() {
 
 // scroll function
 function reveal() {
+  var revealy = document.querySelectorAll('.revealY');
   var revealx = document.querySelectorAll('.revealX');
   var revealx_rev = document.querySelectorAll('.revealX-rev');
-  var revealy = document.querySelectorAll('.revealY');
+
+  // revealY
+  for (var i = 0; i < revealy.length; i++) {
+
+    var windowheight = window.innerHeight;
+    var revealtop = revealy[i].getBoundingClientRect().top;
+    var revealpoint = 200;
+
+    if (revealtop < windowheight - revealpoint) {
+      revealy[i].classList.add('revealY-active');
+    }
+    else {
+      revealy[i].classList.remove('revealY-active');
+    }
+  }
+
 
   // revealX
   for (var i = 0; i < revealx.length; i++) {
@@ -54,23 +70,9 @@ function reveal() {
     }
   }
 
-  // revealY
-  for (var i = 0; i < revealy.length; i++) {
-
-    var windowheight = window.innerHeight;
-    var revealtop = revealy[i].getBoundingClientRect().top;
-    var revealpoint = 250;
-
-    if (revealtop < windowheight - revealpoint) {
-      revealy[i].classList.add('revealY-active');
-    }
-    else {
-      revealy[i].classList.remove('revealY-active');
-    }
-  }
 }
 
-// Attach scroll and highlightActiveTab functions to window.onscroll
+// Attach scroll and body_reveal functions to window.onscroll
 window.onscroll = function () {
   scrollFunction();
   reveal();
