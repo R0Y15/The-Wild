@@ -20,9 +20,25 @@ function scrollFunction() {
 
 // scroll function
 function reveal() {
+  var reveal = document.querySelectorAll('.reveal');
   var revealy = document.querySelectorAll('.revealY');
   var revealx = document.querySelectorAll('.revealX');
   var revealx_rev = document.querySelectorAll('.revealX-rev');
+
+  // reveal
+  for (var i = 0; i < reveal.length; i++) {
+
+    var windowheight = window.innerHeight;
+    var revealtop = reveal[i].getBoundingClientRect().top;
+    var revealpoint = 200;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveal[i].classList.add('reveal-active');
+    }
+    else {
+      reveal[i].classList.remove('reveal-active');
+    }
+  }
 
   // revealY
   for (var i = 0; i < revealy.length; i++) {
