@@ -93,3 +93,51 @@ window.onscroll = function () {
   scrollFunction();
   reveal();
 };
+
+
+//section
+var elephant = document.querySelector('.ele');
+var lion = document.querySelector('.lion');
+
+var switchAnimals = function () {
+  if (elephant.style.display === 'none') {
+    elephant.style.opacity = 0;
+    elephant.style.display = 'block';
+    fadeIn(elephant);
+    lion.style.opacity = 1;
+    lion.style.display = 'none';
+    fadeOut(lion);
+  } else {
+    lion.style.opacity = 0;
+    lion.style.display = 'block';
+    fadeIn(lion);
+    elephant.style.opacity = 1;
+    elephant.style.display = 'none';
+    fadeOut(elephant);
+  }
+}
+
+var fadeIn = function (element) {
+  var op = 0.1;
+  var timer = setInterval(function () {
+    if (op >= 1) {
+      clearInterval(timer);
+    }
+    element.style.opacity = op;
+    op += 0.1;
+  }, 50);
+}
+
+var fadeOut = function (element) {
+  var op = 1;
+  var timer = setInterval(function () {
+    if (op <= 0.1) {
+      clearInterval(timer);
+      element.style.display = 'none';
+    }
+    element.style.opacity = op;
+    op -= 0.1;
+  }, 50);
+}
+
+setInterval(switchAnimals, 5000);
