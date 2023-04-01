@@ -12,10 +12,6 @@ function scrollFunction() {
   } else {
     navbar.classList.remove("active");
   }
-
-  if (footer.offsetTop <= (window.innerHeight + window.pageYOffset)) {
-    navbar.classList.remove("active");
-  }
 }
 
 // scroll function
@@ -30,7 +26,7 @@ function reveal() {
 
     var windowheight = window.innerHeight;
     var revealtop = reveal[i].getBoundingClientRect().top;
-    var revealpoint = 200;
+    var revealpoint = 50;
 
     if (revealtop < windowheight - revealpoint) {
       reveal[i].classList.add('reveal-active');
@@ -116,7 +112,6 @@ var switchAnimals = function () {
     fadeOut(elephant);
   }
 }
-
 var fadeIn = function (element) {
   var op = 0.1;
   var timer = setInterval(function () {
@@ -127,7 +122,6 @@ var fadeIn = function (element) {
     op += 0.1;
   }, 50);
 }
-
 var fadeOut = function (element) {
   var op = 1;
   var timer = setInterval(function () {
@@ -139,5 +133,4 @@ var fadeOut = function (element) {
     op -= 0.1;
   }, 50);
 }
-
 setInterval(switchAnimals, 5000);
