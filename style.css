@@ -374,7 +374,7 @@ section {
 .heading2{
   position: absolute;
   top: 6px;
-  right: 466px;
+left: 794px;
   font-size: 280px !important;
 }
 
@@ -474,6 +474,88 @@ section {
   height: 603px;
   /* z-index: 5; */
   /* filter: drop-shadow(0 15px 19px #414141); */
+}
+
+@media screen and (max-width: 1401px) {
+/* section 2 */
+.carousel{
+   width: 550px;
+}
+.carousal-heading{
+  left: 200px;
+  top: -16px;
+  font-size: 160px !important;
+}
+.carousal-content{
+  left: 680px;
+    top: 145px;
+    width: 557px;
+    font-size: 15px;
+}
+.join-us{
+  font-size: 25px;
+}
+.section-2{
+  height: 566px;
+}
+
+
+  /* section 3 */
+  .heading1{
+    font-size: 250px !important;
+    left: 625px;
+  }
+  .heading2 {
+    font-size: 250px !important;
+    left: 525px;
+  }
+  .left-img {
+    top: 60px;
+    left: 171px;
+    height: 700px;
+  }
+  .Right-img{
+    height: 801px;
+    Right: -441px;
+  }
+  .left-text{
+    top: 260px;
+    right: -597px;
+  } 
+  .right-text {
+    width: 800px;
+    top: 292px;
+    right: -620px;
+  }
+  .section-3{
+    height: 497px;
+  }
+  /* section 4 */
+  .about-heading{
+    font-size: 150px !important;
+    left: 600;
+  }
+  .about-img{
+    height: 504px;
+  }
+  .about-content{
+    font-size: 14px;
+    left: 592px;
+    top: 161px;
+  }
+  #about{
+    height: 497px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 6rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Mobile friendly */
@@ -615,4 +697,37 @@ position: absolute;
 /* Footer */
 Footer {
   height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* CSS for screens smaller than 600px */
+  .header {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* CSS for screens between 601px and 900px */
+  .header {
+    font-size: 36px;
+    padding: 20px;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  /* CSS for screens larger than 900px */
+  .header {
+    font-size: 48px;
+    padding: 30px;
+  }
+  .menu {
+    display: block;
+  }
 }
