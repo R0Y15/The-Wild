@@ -401,6 +401,32 @@ section {
   z-index: 0;
 }
 
+#about{
+  height: 700px;
+}
+
+.about-heading{
+  position: absolute;
+  font-size: 220px !important;
+  left: 700px;
+  top: -35px;
+}
+
+.about-content{
+  position: absolute;
+  left: 700px;
+  top: 198px;
+  text-align: justify;
+}
+
+.about-img{
+  position: Absolute;
+  top: 23px;
+  left: 67px;
+  height: 603px;
+  /* z-index: 5; */
+  /* filter: drop-shadow(0 15px 19px #414141); */
+}
 
 /* Mobile friendly */
 @media(max-width:960px) {
