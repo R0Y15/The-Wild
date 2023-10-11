@@ -14,6 +14,11 @@ function scrollFunction() {
   }
 }
 
+// dark-mode function
+var icon =document.getElementById("icon");
+icon.onclick=function(){
+  document.body.classList.toggle("dark-theme");
+}
 // scroll function
 function reveal() {
   var reveal = document.querySelectorAll('.reveal');
